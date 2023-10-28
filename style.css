@@ -1,0 +1,123 @@
+body{
+    background: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 251, 251);
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    background-image: url("images/banner.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 20px; 
+    text-align: center;
+}
+header a{
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+header .logo a{
+    background-image: url("images/logo.png");
+    background-size: 120px;
+    background-repeat: no-repeat;
+    display:inline-block;
+    width: 120px;
+    text-indent: -9999999px;
+    height: 120px;
+    position: relative;
+    top: -30px;
+}
+
+.me{
+    text-align: center;
+    background-color: rgb(16, 16, 16);
+    margin: auto;
+    padding: 10px 10px;
+    
+}
+
+.learn{
+    background-color: rgb(16, 16, 16);
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.learn figure{
+    margin: auto;
+    width: 200px;
+}
+
+.learn figure img{
+    border: solid black 1px;
+    width: 200px;
+}
+
+.features{
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.features figure{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.features figure img{
+    border-radius: 50%;
+    border: solid black 1px;
+    width: 200px;
+    box-shadow:rgb(78, 78, 78) 0 0 20px;
+}
+
+.features2{
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.features2 figure{
+    margin: auto;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.features2 figure img{
+    border-radius: 50%;
+    border: solid black 1px;
+    width: 150px;
+    box-shadow:rgb(78, 78, 78) 0 0 20px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: rgb(21, 21, 21);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+
+
