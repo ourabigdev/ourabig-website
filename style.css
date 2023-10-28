@@ -40,7 +40,6 @@ header .logo a{
     background-color: rgb(16, 16, 16);
     margin: auto;
     padding: 10px 10px;
-    
 }
 
 .learn{
@@ -49,6 +48,7 @@ header .logo a{
     padding: 10px 10px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .learn figure{
@@ -67,6 +67,7 @@ header .logo a{
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .features figure{
     margin: auto;
@@ -88,6 +89,7 @@ header .logo a{
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .features2 figure{
     margin: auto;
@@ -119,5 +121,19 @@ footer{
 }
 
 
-
+@media only screen and (max-width: 514px){
+    header{
+        height: 450px;
+        font-size: 400px;
+    }
+    .features{
+        padding: 40px;
+    }
+    .features2{
+        padding: 35px;
+    }
+    footer{
+        padding: 40px;
+    }
+}
 
