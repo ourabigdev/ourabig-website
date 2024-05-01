@@ -39,7 +39,10 @@ header .logo a{
     text-align: center;
     background-color: rgb(16, 16, 16);
     margin: auto;
-    padding: 10px 10px;
+    padding: 20px 20px;
+}
+.me p h3 p a{
+    color: antiquewhite;
 }
 
 .learn{
@@ -99,7 +102,7 @@ header .logo a{
 }
 
 .features2 figure img{
-    border-radius: 50%;
+    border-radius: 15%;
     border: solid black 1px;
     width: 150px;
     box-shadow:rgb(78, 78, 78) 0 0 20px;
