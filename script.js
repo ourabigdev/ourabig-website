@@ -1,8 +1,10 @@
-$(document).ready(function(){
-    $('.header').hide().fadeIn(1000);
-    $('.me').hide().fadeIn(1000);
-    $('.learn').hide().fadeIn(1000);
-    $('.features').hide().fadeIn(1000);
-    $('.features2').hide().fadeIn(1000);
-    $('.footer').hide().fadeIn(1000);
+$(document).ready(function() {
+    // Select multiple elements at once and hide them initially
+    $('.header, .me, .learn, .features, .features2, .footer').hide();
+
+    // Set staggered animation using each() and delay
+    $('.header, .me, .learn, .features, .features2, .footer').each(function(index) {
+        // Fade in each element with a delay based on its position
+        $(this).delay(200 * index).fadeIn(1000);
+    });
 });
