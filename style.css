@@ -1,142 +1,128 @@
-body{
+/* Base styles */
+body {
     background: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 251, 251);
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: black;
-    background-image: url("images/banner.png");
+
+a {
+    color: white; /* Ensuring all links are white */
+    font-weight: bold; /* Making all links bold */
+    text-decoration: none;
+}
+
+/* Header styles */
+header {
+    background: black url("images/banner.png") center no-repeat;
     background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 400px;
     padding: 20px; 
     text-align: center;
 }
-header a{
+
+header a {
     color: rgb(71, 71, 71);
-    text-decoration: none;
-    font-weight: bolder;
     margin-top: 20px;
     text-transform: uppercase;
 }
 
-header .logo a{
-    background-image: url("images/logo.png");
+header .logo a {
+    background: url("images/logo.png") no-repeat;
     background-size: 120px;
-    background-repeat: no-repeat;
-    display:inline-block;
-    width: 120px;
-    text-indent: -9999999px;
+    display: inline-block;
     height: 120px;
     position: relative;
+    text-indent: -9999999px;
     top: -30px;
+    width: 120px;
 }
 
-.me{
-    text-align: center;
+/* Section styles */
+.me {
     background-color: rgb(16, 16, 16);
+    color: white;
+    font-size: 16px; /* Suitable font size for readability */
+    line-height: 1.6; /* Improve line spacing for better readability */
     margin: auto;
-    padding: 20px 20px;
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 50px; /* Increase padding */
+    text-align: center; /* Centering text */
+    border: 20px;
+    border-color: rgb(64, 64, 64);
+    border-radius: 10%;
+    top: 20px;
 }
-.me p h3 p a{
-    color: antiquewhite;
+
+.learning{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(20, 20, 20);
+    padding: 7px;
 }
 
 .learn{
-    background-color: rgb(16, 16, 16);
-    margin: auto;
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
-.learn figure{
-    margin: auto;
-    width: 200px;
-}
-
-.learn figure img{
-    border: solid black 1px;
-    width: 200px;
-}
-
-.features{
+.learn, .features, .features2 {
     background-color: rgb(25, 25, 25);
-    color: rgb(255, 255, 255);
+    margin: auto;
     padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.features figure{
+
+.learn figure, .features figure, .features2 figure {
     margin: auto;
-    width: 200px;
     text-align: center;
     font-weight: bold;
 }
 
-.features figure img{
+.learn figure img, .features figure img {
+    width: 200px;
+    border: solid black 1px;
+}
+
+.features figure img, .features2 figure img {
     border-radius: 50%;
-    border: solid black 1px;
-    width: 200px;
-    box-shadow:rgb(78, 78, 78) 0 0 20px;
+    box-shadow: rgb(78, 78, 78) 0 0 20px;
 }
 
-.features2{
-    background-color: rgb(25, 25, 25);
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.features2 figure{
-    margin: auto;
+.features2 figure, .features2 figure img {
     width: 150px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.features2 figure img{
     border-radius: 15%;
-    border: solid black 1px;
-    width: 150px;
-    box-shadow:rgb(78, 78, 78) 0 0 20px;
 }
 
-ul{
+/* List styles */
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
 }
-li{
+
+li {
     display: inline-block;
     margin-right: 20px;
 }
-footer{
+
+/* Footer styles */
+footer {
     background-color: rgb(21, 21, 21);
     padding: 10px 20px;
     text-align: center;
 }
 
-
-@media only screen and (max-width: 514px){
-    header{
+/* Media queries */
+@media only screen and (max-width: 514px) {
+    header {
         height: 450px;
         font-size: 400px;
     }
-    .features{
-        padding: 40px;
-    }
-    .features2{
-        padding: 35px;
-    }
-    footer{
+
+    .features, .features2, footer {
         padding: 40px;
     }
 }
-
