@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Projects{% endblock %}
+{% block content %}
+<section class="projects">
+    <div class="container">
+        <h1 class="animate-pop-in">My Projects</h1>
+        <div class="project-grid">
+            <div class="project-card animate-fade-in">
+                <img src="{{ url_for('static', filename='img/lifeSim.jpg') }}" alt="Life Simulation JS">
+                <h2>Life Simulation JS</h2>
+                <p>A cellular automata life simulation using HTML5 Canvas and JavaScript. This project explores complex systems and particle interactions inspired by Newton's laws of forces.</p>
+                <a href="https://github.com/ourabigdev/life-simulation-js" class="btn" target="_blank">View Project</a>
+            </div>
+            <!-- ... other project cards ... -->
+        </div>
+    </div>
+</section>
+{% endblock %}

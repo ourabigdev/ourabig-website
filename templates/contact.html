@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<section class="contact">
+    <div class="container">
+        <h1 class="animate-pop-in">Contact Me</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class="contact-content">
+            <form class="contact-form animate-fade-in" method="POST" action="{{ url_for('contact') }}">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info animate-fade-in">
+                <h2>Get in Touch</h2>
+                <p><i class="fas fa-envelope"></i> hatimourahoumoney@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +212 123 456 789</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rabat, Morocco</p>
+                <div class="social-icons">
+                    <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
